@@ -1,0 +1,64 @@
+.appartaments{
+    background: var(--dark, #242B33);
+    .container{
+        h1{
+            color: var(--accent, #D4C17F);
+            font-family: Playfair Display;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            z-index: 12;
+        }
+        .appartaments__content{
+            max-width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-top: 100px;
+            justify-content: center;
+            .appartaments__cardLeft{
+                background-image: url("../../img/appartaments_pic1.png");
+                height: 320px;
+                width: 535px;
+                z-index: 12;
+                p{
+                    max-width: 353px;
+                    margin: 248px 132px 50px 50px;
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .appartaments__cardRight{
+                background-image: url("../../img/appartaments_pic2.png");
+                height: 320px;
+                width: 535px;
+                z-index: 12;
+                p{
+                    max-width: 353px;
+                    margin: 248px 132px 50px 50px;
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .appartaments_III{
+            position: relative;
+            z-index: 1;
+            img{
+                position: absolute;
+                z-index: -10;
+                top: -730px;
+                left: -215px;
+            }
+        }
+    }
+}

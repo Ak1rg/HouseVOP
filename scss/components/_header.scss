@@ -1,0 +1,192 @@
+header{
+    height: 840px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../../img/first_screen_back.png"), lightgray 50% / cover no-repeat;
+    .head{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .head__logo{
+            width: 138px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h1{
+                color: #FFF;
+                font-family: Post No Bills Jaffna SemiBold;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            p{
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.44px;
+            }
+        }
+        .head__buttons{
+            display: flex;
+            gap: 40px;
+            @media screen and (max-width:1024px) {
+                display: none;
+                width: 90%;
+                position: absolute;
+                z-index: 10;
+                flex-direction: column;
+                gap: 0px;
+                top: -200px;
+                a{
+                    padding: 20px 0px;
+                    background-color: #242B33;
+                    border: 1px solid black;
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+            }
+        }
+        .head__buttons.active{
+            display: flex;
+            transform: translateY(40%);
+            top: 0px;
+        }
+    }
+    .burger{
+        margin-top: -50px;
+        .burger-lines{
+            display: none;
+            @media screen and (max-width:1024px) {
+                display: flex;
+            }
+            flex-direction: column;
+            gap: 4px;
+            position: absolute;
+            z-index: 10;
+            right: 50px;
+            cursor: pointer;
+            .burger-line{
+                background: var(--accent, #D4C17F);
+                width: 30px;
+                height: 4px;
+            }
+        }
+        .burger-menu{
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background: var(--dark, #242B33);;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            a{
+                text-decoration: none;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                transition: .3s;
+            }
+            a:hover{
+                color: #036FC7;
+                transition: .3s;
+            }
+            button{
+                padding: 9px 20px;
+                background-color: #212B31;
+                color: white;
+                font-family: Inter;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover{
+                transition: .3s;
+                color: black;
+                background-color: white;
+                transition: 0.3s;
+            }
+        }
+        .burger-menu.active{
+            display: flex;
+        }
+    }
+    .head__text{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 200px;;
+        .head__main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                @media screen and (max-width:706px) {
+                    font-size: 34px;
+                }
+                @media screen and (max-width:460px) {
+                    font-size: 20px;
+                }
+                max-width: 556px;
+                color: var(--accent, #D4C17F);
+                text-align: center;
+                font-family: Playfair Display;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .head__mouseImg{
+                margin-top: 100px;
+            }
+        }
+        .head__text__infoLines{
+            display: flex;
+            gap: 100px;
+            flex-wrap: wrap;
+            height: 22px;
+            @media screen and (max-width:800px) {
+                gap: 10px;
+                justify-content: center;
+            }
+            div{
+                display: flex;
+                gap: 15px;
+                width: 260px;
+                p{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

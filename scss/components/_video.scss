@@ -1,0 +1,27 @@
+.video{
+    background: var(--dark, #242B33);
+    overflow: hidden;
+    .container{
+        .video__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 100%;
+                z-index: 12;
+            }
+        }
+        .video_IV{
+            position: relative;
+            z-index: 1;
+            img{
+                max-width: 409px;
+                width: 100%;
+                position: absolute;
+                z-index: -10;
+                top: -450px;
+                left: 915px;
+            }
+        }
+    }
+}

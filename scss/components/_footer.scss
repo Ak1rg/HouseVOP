@@ -1,0 +1,59 @@
+.footer{
+    background: #2D343C;
+    .container{
+        .footer__content{
+            display: flex;
+            gap: 160px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 70px 0px 50px 0px;
+            .footer__logo{
+                width: 138px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    color: #FFF;
+                    font-family: Post No Bills Jaffna SemiBold;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                p{
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.44px;
+                }
+            }
+            .footer__list{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                li{
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                    span{
+                        color: var(--accent, #D4C17F);
+                        font-weight: 700;
+                    }
+                    div{
+                        padding-top: 5px;
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

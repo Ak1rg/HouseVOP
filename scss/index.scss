@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1115px;
+    margin: 0 auto;
+    @media screen and (max-width:1400px) {
+        width: 90%;
+    }
+}
+
+@import "./components/_header";
+@import "./components/_cards";
+@import "./components/_appartaments";
+@import "./components/_city";
+@import "./components/_video";
+@import "./components/_map";
+@import "./components/_questions";
+@import "./components/_footer";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');

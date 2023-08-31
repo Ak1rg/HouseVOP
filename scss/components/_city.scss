@@ -1,0 +1,77 @@
+.city{
+    background-image: url("../../img/city_back.png");
+    background-size: cover;
+    .container{
+        .city__content{
+            padding: 180px 0px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            .city__cardLeft{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                h1{
+                    color: var(--accent, #D4C17F);
+                    font-family: Playfair Display;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                p{  max-width: 535px;
+                    color: #FFF;
+                    font-family: Raleway;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; 
+                }
+            }
+            .city__cardRight{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                max-width: 540px;
+                input{
+                    width: 255px;
+                    height: 50px;
+                    text-align: center;
+                    opacity: 0.2;
+                    background-color: #fff;
+                    color: #BEBEBE;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px; 
+                }
+                p{
+                    width: 255px;
+                    height: 28px;
+                    color: #E7E7E7;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px; 
+                }
+                button{
+                    padding: 10px 50px; 
+                    background: var(--accent, #D4C17F);
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 27px; /* 168.75% */
+                }
+            }
+        }
+    }
+}
